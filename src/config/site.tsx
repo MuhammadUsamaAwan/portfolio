@@ -1,11 +1,4 @@
-import {
-  ActivityIcon,
-  BicepsFlexedIcon,
-  CircleHelpIcon,
-  CircleUserRoundIcon,
-  FolderGit2Icon,
-  HouseIcon,
-} from 'lucide-react';
+import { ActivityIcon, BicepsFlexedIcon, CircleUserRoundIcon, FolderGit2Icon, HouseIcon } from 'lucide-react';
 
 export const siteConfig = {
   title: 'Muhammad Usama',
@@ -18,16 +11,6 @@ export const siteConfig = {
       icon: <HouseIcon className='size-4 sm:hidden' />,
     },
     {
-      name: 'About',
-      href: '/about',
-      icon: <CircleHelpIcon className='size-4 sm:hidden' />,
-    },
-    {
-      name: 'Projects',
-      href: '#projects',
-      icon: <FolderGit2Icon className='size-4 sm:hidden' />,
-    },
-    {
       name: 'Skills',
       href: '#skills',
       icon: <BicepsFlexedIcon className='size-4 sm:hidden' />,
@@ -36,6 +19,11 @@ export const siteConfig = {
       name: 'Experience',
       href: '#experience',
       icon: <ActivityIcon className='size-4 sm:hidden' />,
+    },
+    {
+      name: 'Projects',
+      href: '#projects',
+      icon: <FolderGit2Icon className='size-4 sm:hidden' />,
     },
     {
       name: 'Contact',
