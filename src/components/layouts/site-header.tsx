@@ -37,7 +37,7 @@ export function SiteHeader() {
           transition={{
             duration: 0.2,
           }}
-          className='fixed inset-x-0 top-4 z-10 mx-auto flex max-w-fit space-x-1 rounded-lg border bg-background px-2 sm:px-3'
+          className='fixed inset-x-0 top-4 z-10 mx-auto flex max-w-fit space-x-1 rounded-xl border bg-background px-2 sm:px-3'
         >
           {siteConfig.nav.map(item => (
             <Link

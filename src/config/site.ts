@@ -27,5 +27,6 @@ export const siteConfig = {
   links: {
     github: 'https://github.com/MuhammadUsamaAwan',
     linkedin: 'https://www.linkedin.com/in/muhammad-usama-704400192/',
+    mail: 'mailto:underusama@gmail.com',
   },
 };

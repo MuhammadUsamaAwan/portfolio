@@ -1,11 +1,11 @@
-import type { Metadata, Viewport } from 'next';
+import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 
 import { siteConfig } from '~/config/site';
 import { cn } from '~/lib/utils';
 import { Background } from '~/components/layouts/background';
+import { SiteFooter } from '~/components/layouts/site-footer';
 import { SiteHeader } from '~/components/layouts/site-header';
-import { ThemeProvider } from '~/components/layouts/theme-provider';
 
 import '~/styles/globals.css';
 
@@ -17,26 +17,18 @@ export const metadata: Metadata = {
   description: siteConfig.description,
 };
 
-export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang='en'>
       <body className={cn('flex min-h-dvh flex-col font-sans antialiased', GeistSans.variable)}>
-        <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-          <SiteHeader />
-          <main className='flex-1'>{children}</main>
-          <Background />
-        </ThemeProvider>
+        <SiteHeader />
+        <main className='flex-1'>{children}</main>
+        <SiteFooter />
+        <Background />
       </body>
     </html>
   );

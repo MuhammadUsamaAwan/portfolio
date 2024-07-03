@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { ExternalLinkIcon } from 'lucide-react';
 
 import { CardBody, CardContainer, CardItem } from '~/components/ui/card';
@@ -33,8 +34,21 @@ const projects = [
 ];
 
 export default function Projects() {
+  const SLIDE_VARIANTS = {
+    hidden: { opacity: 0, x: '-25vw' },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
-    <section id='projects' className='grid gap-10 md:grid-cols-2 xl:grid-cols-3'>
+    <motion.section
+      viewport={{ once: true }}
+      initial='hidden'
+      whileInView='visible'
+      variants={SLIDE_VARIANTS}
+      transition={{ duration: 1 }}
+      id='projects'
+      className='grid gap-10 md:grid-cols-2 xl:grid-cols-3'
+    >
       {projects.map((project, index) => (
         <CardContainer key={`project_${index}`}>
           <CardBody className='relative rounded-xl border bg-background p-6'>
@@ -75,6 +89,6 @@ export default function Projects() {
           </CardBody>
         </CardContainer>
       ))}
-    </section>
+    </motion.section>
   );
 }
