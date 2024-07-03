@@ -1,5 +1,6 @@
 import { Experience } from '~/components/experience';
 import { Hero } from '~/components/hero';
+import Projects from '~/components/projects';
 import { Skills } from '~/components/skills';
 
 export default function HomePage() {
@@ -10,6 +11,9 @@ export default function HomePage() {
       <Skills />
       <div className='mt-20'></div>
       <Experience />
+      <div className='mt-20'></div>
+      <Projects />
+      <div className='mt-20'></div>
     </div>
   );
 }

@@ -42,7 +42,7 @@ export function Hero() {
           Hi I&apos;m {siteConfig.title}, a full-stack developer based in Pakistan.
         </motion.p>
         <motion.div variants={FADE_DOWN_ANIMATION_VARIANTS} className='mt-8 flex items-center justify-center space-x-4'>
-          <MagicButton as='a' href='/resume.pdf' target='_blank'>
+          <MagicButton duration={4000} as='a' href='/resume.pdf' target='_blank'>
             Dowload Resume
             <DownloadIcon className='ml-2 size-4' />
           </MagicButton>
