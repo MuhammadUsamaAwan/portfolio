@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from 'next';
+import { GeistSans } from 'geist/font/sans';
 
 import { siteConfig } from '~/config/site';
+import { cn } from '~/lib/utils';
+import { Background } from '~/components/layouts/background';
+import { SiteHeader } from '~/components/layouts/site-header';
 import { ThemeProvider } from '~/components/layouts/theme-provider';
 
 import '~/styles/globals.css';
@@ -27,9 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body>
+      <body className={cn('flex min-h-dvh flex-col font-sans antialiased', GeistSans.variable)}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-          {children}
+          <SiteHeader />
+          <main className='flex-1'>{children}</main>
+          <Background />
         </ThemeProvider>
       </body>
     </html>
