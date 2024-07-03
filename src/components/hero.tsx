@@ -18,7 +18,7 @@ export function Hero() {
     <section className='pt-32'>
       <motion.div
         initial='hidden'
-        animate='show'
+        whileInView='show'
         viewport={{ once: true }}
         variants={{
           hidden: {},
@@ -31,17 +31,17 @@ export function Hero() {
       >
         <motion.h1
           variants={FADE_DOWN_ANIMATION_VARIANTS}
-          className='mx-auto max-w-4xl text-balance text-center text-5xl font-extrabold leading-[2.6rem] tracking-tighter'
+          className='mx-auto max-w-4xl text-balance text-center text-5xl font-extrabold leading-[3rem] tracking-tighter'
         >
           Crafting Seamless Digital Experiences with <span className='text-primary'>Cutting-Edge Solutions</span>
         </motion.h1>
         <motion.p
           variants={FADE_DOWN_ANIMATION_VARIANTS}
-          className='mx-auto mt-2 max-w-4xl text-balance text-center text-xl text-muted-foreground'
+          className='mx-auto mt-4 max-w-4xl text-balance text-center text-xl text-muted-foreground'
         >
           Hi I&apos;m {siteConfig.title}, a full-stack developer based in Pakistan.
         </motion.p>
-        <motion.div variants={FADE_DOWN_ANIMATION_VARIANTS} className='mt-4 flex items-center justify-center space-x-4'>
+        <motion.div variants={FADE_DOWN_ANIMATION_VARIANTS} className='mt-8 flex items-center justify-center space-x-4'>
           <MagicButton as='a' href='/resume.pdf' target='_blank'>
             Dowload Resume
             <DownloadIcon className='ml-2 size-4' />
@@ -56,7 +56,7 @@ export function Hero() {
             href={siteConfig.links.linkedin}
             className='grid size-10 place-content-center rounded-full border p-2 duration-200 hover:text-primary'
           >
-            <Icons.linkedin className='size-6' />
+            <Icons.linkedin className='size-5' />
           </a>
         </motion.div>
       </motion.div>

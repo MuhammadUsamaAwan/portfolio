@@ -37,12 +37,15 @@ export function SiteHeader() {
           transition={{
             duration: 0.2,
           }}
-          className='fixed inset-x-0 top-4 mx-auto flex max-w-fit space-x-1 rounded-lg border bg-background px-3'
+          className='fixed inset-x-0 top-4 z-10 mx-auto flex max-w-fit space-x-1 rounded-lg border bg-background px-2 sm:px-3'
         >
           {siteConfig.nav.map(item => (
-            <Link href={item.href} key={item.name} className='p-3 text-sm font-medium duration-200 hover:text-primary'>
-              <span className='hidden sm:inline'>{item.name}</span>
-              {item.icon}
+            <Link
+              href={item.href}
+              key={item.name}
+              className='px-1 py-3 text-sm font-medium duration-200 hover:text-primary sm:px-3'
+            >
+              <span>{item.name}</span>
             </Link>
           ))}
         </motion.nav>

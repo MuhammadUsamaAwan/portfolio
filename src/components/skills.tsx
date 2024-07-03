@@ -8,13 +8,13 @@ export function Skills() {
   const SLIDE_VARIANTS = {
     hidden: { opacity: 0, x: '-25vw' },
     visible: { opacity: 1, x: 0 },
-    right: { opacity: 0, x: '25vw' },
   };
 
   return (
     <motion.section
+      viewport={{ once: true }}
       initial='hidden'
-      animate='visible'
+      whileInView='visible'
       variants={SLIDE_VARIANTS}
       transition={{ duration: 1 }}
       id='skills'

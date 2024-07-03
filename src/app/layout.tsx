@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={cn('flex min-h-[200dvh] flex-col font-sans antialiased', GeistSans.variable)}>
+      <body className={cn('flex min-h-dvh flex-col font-sans antialiased', GeistSans.variable)}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
           <SiteHeader />
           <main className='flex-1'>{children}</main>
