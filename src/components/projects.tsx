@@ -40,55 +40,61 @@ export default function Projects() {
   };
 
   return (
-    <motion.section
-      viewport={{ once: true }}
-      initial='hidden'
-      whileInView='visible'
-      variants={SLIDE_VARIANTS}
-      transition={{ duration: 1 }}
-      id='projects'
-      className='grid gap-10 md:grid-cols-2 xl:grid-cols-3'
-    >
-      {projects.map((project, index) => (
-        <CardContainer key={`project_${index}`}>
-          <CardBody className='relative rounded-xl border bg-background p-6'>
-            <CardItem translateZ='50' className='text-lg font-semibold'>
-              {project.title}
-            </CardItem>
-            <CardItem as='p' translateZ='60' className='text-sm text-muted-foreground'>
-              {project.description}
-            </CardItem>
-            <CardItem translateZ='100' className='mt-4 w-full'>
-              <Image
-                src={project.image}
-                height='1000'
-                width='1000'
-                className='h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl'
-                alt='thumbnail'
-                sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw'
-              />
-            </CardItem>
-            <div className='mt-4 flex items-center justify-between'>
-              <div className='flex -space-x-1.5'>
-                {project.technologies?.map((T, i) => (
-                  <div key={i} className='grid place-content-center rounded-full border bg-background p-2'>
-                    <T className='size-5' key={i} />
+    <>
+      <motion.section
+        viewport={{ once: true }}
+        initial='hidden'
+        whileInView='visible'
+        variants={SLIDE_VARIANTS}
+        transition={{ duration: 1 }}
+        id='projects'
+      >
+        <motion.h1 className='mx-auto mb-8 max-w-4xl text-balance text-center text-4xl font-extrabold leading-[3rem] tracking-tighter'>
+          A Small selection of <span className='text-primary'>My Recent Projects</span>
+        </motion.h1>
+        <div className='grid gap-10 md:grid-cols-2 xl:grid-cols-3'>
+          {projects.map((project, index) => (
+            <CardContainer key={`project_${index}`}>
+              <CardBody className='relative rounded-xl border bg-background p-6'>
+                <CardItem translateZ='50' className='text-lg font-semibold'>
+                  {project.title}
+                </CardItem>
+                <CardItem as='p' translateZ='60' className='text-sm text-muted-foreground'>
+                  {project.description}
+                </CardItem>
+                <CardItem translateZ='100' className='mt-4 w-full'>
+                  <Image
+                    src={project.image}
+                    height='1000'
+                    width='1000'
+                    className='h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl'
+                    alt='thumbnail'
+                    sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw'
+                  />
+                </CardItem>
+                <div className='mt-4 flex items-center justify-between'>
+                  <div className='flex -space-x-1.5'>
+                    {project.technologies?.map((T, i) => (
+                      <div key={i} className='grid place-content-center rounded-full border bg-background p-2'>
+                        <T className='size-5' key={i} />
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-              <CardItem
-                translateZ={20}
-                as='a'
-                href={project.href}
-                target='_blank'
-                className='inline-flex items-center text-sm hover:text-primary'
-              >
-                Live Preview <ExternalLinkIcon className='ml-1.5 size-4' />
-              </CardItem>
-            </div>
-          </CardBody>
-        </CardContainer>
-      ))}
-    </motion.section>
+                  <CardItem
+                    translateZ={20}
+                    as='a'
+                    href={project.href}
+                    target='_blank'
+                    className='inline-flex items-center text-sm hover:text-primary'
+                  >
+                    Live Preview <ExternalLinkIcon className='ml-1.5 size-4' />
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
+          ))}
+        </div>
+      </motion.section>
+    </>
   );
 }
