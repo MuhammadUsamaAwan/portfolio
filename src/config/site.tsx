@@ -43,4 +43,8 @@ export const siteConfig = {
       icon: <CircleUserRoundIcon className='size-4 sm:hidden' />,
     },
   ],
+  links: {
+    github: 'https://github.com/MuhammadUsamaAwan',
+    linkedin: 'https://www.linkedin.com/in/muhammad-usama-704400192/',
+  },
 };
