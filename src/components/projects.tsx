@@ -5,35 +5,10 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ExternalLinkIcon } from 'lucide-react';
 
+import { content } from '~/content';
 import { CardBody, CardContainer, CardItem } from '~/components/ui/card';
 
-import { Icons } from './icons';
-
-const projects = [
-  {
-    title: 'MaxAttire',
-    href: 'http://themaxattire.com/',
-    image: '/maxattire.png',
-    description: 'A comprehensive e-commerce platform for clothing and accessories.',
-    technologies: [Icons.typescript, Icons.next, Icons.postgres, Icons.tailwind],
-  },
-  {
-    title: 'ChatDocs',
-    href: 'http://github.com/MuhammadUsamaAwan/chat-docs',
-    image: '/chatdocs.png',
-    description: 'A LLM Chatbot that answers any questions related to document you upload.',
-    technologies: [Icons.typescript, Icons.next, Icons.postgres, Icons.tailwind],
-  },
-  {
-    title: 'Expense Tracker',
-    href: 'http://themaxattire.com/',
-    image: '/expensetracker.png',
-    description: 'A PWA that allows user can create their own categories and templates to track their expenses.',
-    technologies: [Icons.typescript, Icons.next, Icons.postgres, Icons.tailwind],
-  },
-];
-
-export default function Projects() {
+export function Projects() {
   const SLIDE_VARIANTS = {
     hidden: { opacity: 0, x: '-25vw' },
     visible: { opacity: 1, x: 0 },
@@ -50,21 +25,21 @@ export default function Projects() {
         id='projects'
       >
         <motion.h1 className='mx-auto mb-8 max-w-4xl text-balance text-center text-4xl font-extrabold leading-[3rem] tracking-tighter'>
-          A Small selection of <span className='text-primary'>My Recent Projects</span>
+          {content.projects.heading}
         </motion.h1>
         <div className='grid gap-10 md:grid-cols-2 xl:grid-cols-3'>
-          {projects.map((project, index) => (
-            <CardContainer key={`project_${index}`}>
+          {content.projects.projects.map(p => (
+            <CardContainer key={p.title}>
               <CardBody className='relative rounded-xl border bg-background p-6'>
                 <CardItem translateZ='50' className='text-lg font-semibold'>
-                  {project.title}
+                  {p.title}
                 </CardItem>
                 <CardItem as='p' translateZ='60' className='text-sm text-muted-foreground'>
-                  {project.description}
+                  {p.description}
                 </CardItem>
                 <CardItem translateZ='100' className='mt-4 w-full'>
                   <Image
-                    src={project.image}
+                    src={p.image}
                     height='1000'
                     width='1000'
                     className='h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl'
@@ -73,17 +48,17 @@ export default function Projects() {
                   />
                 </CardItem>
                 <div className='mt-4 flex items-center justify-between'>
-                  <div className='flex -space-x-1.5'>
+                  {/* <div className='flex -space-x-1.5'>
                     {project.technologies?.map((T, i) => (
                       <div key={i} className='grid place-content-center rounded-full border bg-background p-2'>
                         <T className='size-5' key={i} />
                       </div>
                     ))}
-                  </div>
+                  </div> */}
                   <CardItem
                     translateZ={20}
                     as='a'
-                    href={project.href}
+                    href={p.href}
                     target='_blank'
                     className='inline-flex items-center text-sm hover:text-primary'
                   >

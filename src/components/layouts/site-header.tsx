@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion';
 
-import { siteConfig } from '~/config/site';
+import { content } from '~/content';
 
 export function SiteHeader() {
   const { scrollYProgress } = useScroll();
@@ -39,7 +39,7 @@ export function SiteHeader() {
           }}
           className='fixed inset-x-0 top-4 z-10 mx-auto flex max-w-fit space-x-1 rounded-xl border bg-background px-2 sm:px-3'
         >
-          {siteConfig.nav.map(item => (
+          {content.nav.map(item => (
             <Link
               href={item.href}
               key={item.name}

@@ -14,7 +14,7 @@ const config = {
     '<THIRD_PARTY_MODULES>',
     '',
     '^~/env$',
-    '^~/config/(.*)$',
+    '^~/content',
     '^~/types/(.*)$|^~/types$',
     '^~/db/(.*)$|^~/db$',
     '^~/server/(.*)$',

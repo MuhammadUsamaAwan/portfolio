@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 
-import { siteConfig } from '~/config/site';
+import { content } from '~/content';
 import { cn } from '~/lib/utils';
 import { Background } from '~/components/layouts/background';
 import { SiteFooter } from '~/components/layouts/site-footer';
@@ -11,10 +11,10 @@ import '~/styles/globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.title,
-    template: `%s - ${siteConfig.title}`,
+    default: content.site.title,
+    template: `%s - ${content.site.title}`,
   },
-  description: siteConfig.description,
+  description: content.site.description,
 };
 
 export default function RootLayout({
