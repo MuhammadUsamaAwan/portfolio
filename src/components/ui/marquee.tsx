@@ -10,7 +10,7 @@ type MarqueeProps = {
   [key: string]: unknown;
 };
 
-export default function Marquee({
+export function Marquee({
   className,
   reverse,
   pauseOnHover = false,

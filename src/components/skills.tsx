@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion';
 
 import { SkillIcons } from '~/content/skill-icons';
-import Marquee from '~/components/ui/marquee';
+import { Marquee } from '~/components/ui/marquee';
 
 export function Skills() {
   const SLIDE_VARIANTS = {
-    hidden: { opacity: 0, x: '-25vw' },
+    hidden: { opacity: 0, x: '25vw' },
     visible: { opacity: 1, x: 0 },
   };
 
@@ -20,7 +20,7 @@ export function Skills() {
       transition={{ duration: 1 }}
       id='skills'
     >
-      <Marquee pauseOnHover reverse className='gap-8 [--duration:20s]'>
+      <Marquee pauseOnHover className='gap-8 [--duration:20s]'>
         {Object.entries(SkillIcons).map(([name, Icon]) => (
           <Icon key={name} className='size-20 px-5' />
         ))}
