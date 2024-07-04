@@ -48,6 +48,7 @@ export function Hero() {
               <a
                 key={key}
                 href={value.link}
+                target='_blank'
                 className='grid size-10 place-content-center rounded-full border p-2 duration-200 hover:text-primary'
               >
                 {value.icon}
