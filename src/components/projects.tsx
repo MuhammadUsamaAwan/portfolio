@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { ExternalLinkIcon } from 'lucide-react';
 
 import { content } from '~/content';
+import { SkillIcons } from '~/content/skill-icons';
 import { CardBody, CardContainer, CardItem } from '~/components/ui/card';
 
 export function Projects() {
@@ -44,17 +45,20 @@ export function Projects() {
                     width='1000'
                     className='h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl'
                     alt='thumbnail'
-                    sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw'
+                    sizes='(min-width: 1520px) 369px, (min-width: 1280px) calc(18.18vw + 96px), (min-width: 1160px) 445px, (min-width: 780px) calc(43.61vw - 52px), (min-width: 560px) 445px, calc(94.58vw - 66px)'
                   />
                 </CardItem>
                 <div className='mt-4 flex items-center justify-between'>
-                  {/* <div className='flex -space-x-1.5'>
-                    {project.technologies?.map((T, i) => (
-                      <div key={i} className='grid place-content-center rounded-full border bg-background p-2'>
-                        <T className='size-5' key={i} />
-                      </div>
-                    ))}
-                  </div> */}
+                  <div className='flex -space-x-1.5'>
+                    {p.skills?.map((T, i) => {
+                      const Icon = typeof T === 'string' ? SkillIcons[T] : T;
+                      return (
+                        <div key={i} className='grid place-content-center rounded-full border bg-background p-2'>
+                          <Icon className='size-5' key={i} />
+                        </div>
+                      );
+                    })}
+                  </div>
                   <CardItem
                     translateZ={20}
                     as='a'
