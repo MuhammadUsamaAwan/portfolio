@@ -199,7 +199,7 @@ export const content = {
         href: 'https://muhammad-usama-awan.vercel.app/',
         image: '/astroblog.png',
         description:
-          'A lightning-fast blog powered by Astro and MDX, featuring dynamic tags, RSS feed, search functionality, and pagination.',
+          'Blog powered by Astro and MDX, featuring dynamic tags, RSS feed, search functionality, and pagination.',
         skills: ['typescript', 'astro', 'tailwind'] as SkillIcon[],
       },
       {
