@@ -71,7 +71,7 @@ export const content = {
       location: 'Islamabad',
       position: 'Fullstack Developer',
       description:
-        'Played a vital role in developing a comprehensive HR platform using React.js, Nest.js, PostgreSQL, Recoil, and GraphQL. Spearheaded the design and implementation of a dynamic Unreal Engine streaming-driven mock-up delivery system for multiple tenants, utilizing Nest.js, React.js, Three.js, Apollo Federation and AWS. Played a pivotal role in developing a sophisticated food ordering and management web application with Next.js, Nest.js, PostgreSQL, GraphQL and AWS. Contributed to the development of a construction management software using React.js, Nest.js, React Native, PostgreSQL, and AWS. Collaborated seamlessly with cross-functional teams to ensure successful feature delivery and enhancements. Demonstrated a proactive approach to staying updated on emerging technologies and implementing best practices. Showcased dedication to innovation and proficiency in integrating diverse technologies into a unified and impactful application.',
+        'Developed an HR platform using React.js, Nest.js, PostgreSQL, Recoil, and GraphQL. Designed a dynamic Unreal Engine streaming-driven mock-up delivery system for multiple tenants with Nest.js, React.js, Three.js, Apollo Federation, and AWS. Created a sophisticated food ordering and management web app with Next.js, Nest.js, PostgreSQL, GraphQL, and AWS. Contributed to construction management software development using React.js, Nest.js, React Native, PostgreSQL, and AWS. Collaborated with cross-functional teams for feature delivery and enhancements, staying updated on emerging technologies and best practices. Demonstrated innovation and proficiency in integrating diverse technologies.',
     },
     {
       duration: 'Apr 2022 - May 2023',
@@ -79,7 +79,7 @@ export const content = {
       location: 'Rawalpindi',
       position: 'Frontend Developer',
       description:
-        "Played a pivotal role in advancing front-end development for the Medix Hospital Management System (HMS), leveraging React.js and prominent libraries within the ecosystem. Collaborated closely with cross-functional teams to implement robust REST APIs, integrating JWT Authentication for enhanced security. Engineered multiple dashboards and portals utilizing React, to develop rich user experience. Leveraged Redux Toolkit and RTK Query to streamline state management, ensuring seamless data flow and application responsiveness. Spearheaded the integration of React Router for efficient navigation and Vite for rapid development, further enhancing the Medix system's front-end capabilities. Employed Ant Design and Tailwind CSS frameworks to create visually appealing and intuitive user interfaces, enhancing accessibility and user engagement.",
+        'Advanced front-end development for the Medix Hospital Management System (HMS) using React.js and key libraries. Collaborated with cross-functional teams to implement REST APIs and JWT Authentication. Developed multiple dashboards and portals with React for a rich user experience. Streamlined state management using Redux Toolkit and RTK Query, ensuring seamless data flow. Integrated React Router for efficient navigation and Vite for rapid development. Used Ant Design and Tailwind CSS to create visually appealing and intuitive user interfaces, enhancing accessibility and user engagement.',
     },
     {
       duration: 'Sep 2019 - Apr 2022',
@@ -87,13 +87,13 @@ export const content = {
       location: 'Islamabad',
       position: 'Frontend Developer',
       description:
-        'Developed and delivered a range of dynamic dashboards and interactive company portals, showcasing expertise in React.js, Next.js, and responsive web design techniques. Leveraged advanced front-end tools and technologies, such as React Hooks, Redux Toolkit, and React Router, to create intuitive user interfaces and enhance user interactions. Successfully implemented JWT Authentication for enhanced security, ensuring secure access to sensitive data through meticulously designed REST APIs and seamless integration with Axios for data retrieval. Skillfully employed Formik and Yup libraries to streamline data entry and validation processes, enhancing user experience and data accuracy across various forms and input fields. Collaborated closely with cross-functional teams to integrate SASS and Bootstrap frameworks, optimizing styling and design consistency across multiple dashboards and portals. Actively contributed to code-base maintenance and performance optimizations, aligning with best practices to ensure efficient and high-performing front-end solutions.',
+        'Developed dynamic dashboards and interactive company portals using React.js, Next.js, and responsive design techniques. Utilized React Hooks, Redux Toolkit, and React Router for intuitive user interfaces and enhanced interactions. Implemented JWT Authentication for secure data access, integrating REST APIs with Axios. Used Formik and Yup to streamline data entry and validation. Collaborated with teams to integrate SASS and Bootstrap for consistent styling. Contributed to code maintenance and performance optimizations, ensuring efficient front-end solutions.',
     },
   ],
   projects: {
     heading: (
       <>
-        A Small selection of <span className='text-primary'>My Recent Projects</span>
+        A Small Selection of <span className='text-primary'>My Recent Projects</span>
       </>
     ),
     projects: [
@@ -101,7 +101,7 @@ export const content = {
         title: 'MaxAttire',
         href: 'http://themaxattire.com/',
         image: '/maxattire.png',
-        description: 'A comprehensive e-commerce platform for clothing and accessories.',
+        description: 'A comprehensive e-commerce Platform with Custom Decoration Services',
         skills: [
           'typescript',
           'next',
@@ -112,6 +112,35 @@ export const content = {
             </svg>
           ),
           ,
+          'tailwind',
+        ] as SkillIcon[],
+      },
+      {
+        title: 'ATC Tees',
+        href: 'http://atctess.com/',
+        image: '/atctees.png',
+        description: 'An e-commerce platform featuring custom t-shirt designs & team stores marketplace',
+        skills: [
+          'typescript',
+          'next',
+          (props: IconProps) => (
+            <svg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='#4479A1' {...props}>
+              <title>MySQL</title>
+              <path d='M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z' />
+            </svg>
+          ),
+          (props: IconProps) => (
+            <svg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='#2596BE' {...props}>
+              <title>tRPC</title>
+              <path d='M24 12c0 6.62-5.38 12-12 12S0 18.62 0 12 5.38 0 12 0s12 5.38 12 12ZM1.21 12A10.78 10.78 0 0 0 12 22.79 10.78 10.78 0 0 0 22.79 12 10.78 10.78 0 0 0 12 1.21 10.78 10.78 0 0 0 1.21 12Zm10.915-6.086 2.162 1.248a.25.25 0 0 1 .125.217v1.103l2.473 1.428a.25.25 0 0 1 .125.217v2.355l.955.551a.25.25 0 0 1 .125.217v2.496a.25.25 0 0 1-.125.217l-2.162 1.248a.25.25 0 0 1-.25 0l-.956-.552-2.472 1.427a.25.25 0 0 1-.25 0l-2.472-1.427-.956.552a.25.25 0 0 1-.25 0l-2.162-1.248a.25.25 0 0 1-.125-.217V13.25a.25.25 0 0 1 .125-.217l.955-.551v-2.355a.25.25 0 0 1 .125-.217l2.473-1.428V7.38a.25.25 0 0 1 .125-.217l2.162-1.248a.25.25 0 0 1 .25 0Zm1.268 10.049a.25.25 0 0 1-.125-.217V13.25a.25.25 0 0 1 .125-.217l2.16-1.248a.25.25 0 0 1 .25 0l.707.408v-1.922l-2.098-1.21v.814a.25.25 0 0 1-.125.217l-2.162 1.248a.25.25 0 0 1-.25 0l-2.162-1.248a.25.25 0 0 1-.125-.217V9.06L7.49 10.271v1.922l.707-.408a.25.25 0 0 1 .25 0l2.16 1.248a.25.25 0 0 1 .125.217v2.496a.25.25 0 0 1-.125.217l-.705.408L12 17.582l2.098-1.211ZM10.088 9.73l1.662.96V8.766l-1.662-.955Zm3.824 0V7.811l-1.662.955v1.924ZM12 6.418l-1.66.96 1.66.954 1.66-.954Zm-5.59 9.184 1.66.958v-1.921l-1.66-.956Zm3.822 0v-1.92l-1.662.957v1.923Zm-1.91-3.311-1.662.96 1.661.955 1.66-.956Zm5.446 3.31 1.66.96v-1.922l-1.66-.956Zm3.822 0v-1.918l-1.662.956v1.922Zm-1.912-3.31-1.66.96 1.66.955 1.66-.956Z' />
+            </svg>
+          ),
+          (props: IconProps) => (
+            <svg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='#3E4348' {...props}>
+              <title>Square</title>
+              <path d='M4.01 0A4.01 4.01 0 000 4.01v15.98c0 2.21 1.8 4 4.01 4.01h15.98C22.2 24 24 22.2 24 19.99V4A4.01 4.01 0 0019.99 0H4zm1.62 4.36h12.74c.7 0 1.26.57 1.26 1.27v12.74c0 .7-.56 1.27-1.26 1.27H5.63c-.7 0-1.26-.57-1.26-1.27V5.63a1.27 1.27 0 011.26-1.27zm3.83 4.35a.73.73 0 00-.73.73v5.09c0 .4.32.72.72.72h5.1a.73.73 0 00.73-.72V9.44a.73.73 0 00-.73-.73h-5.1Z' />
+            </svg>
+          ),
           'tailwind',
         ] as SkillIcon[],
       },
@@ -144,7 +173,45 @@ export const content = {
         href: 'http://themaxattire.com/',
         image: '/expensetracker.png',
         description: 'A PWA that allows user can create their own categories and templates to track their expenses.',
-        skills: ['typescript', 'next', 'postgres', 'tailwind'] as SkillIcon[],
+        skills: [
+          'typescript',
+          'next',
+          'postgres',
+          (props: IconProps) => (
+            <svg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='#339AF0' {...props}>
+              <title>Mantine</title>
+              <path d='M12 0C5.377 0 0 5.377 0 12s5.377 12 12 12 12-5.377 12-12S18.623 0 12 0zm-1.613 6.15a.91.91 0 0 1 .59.176c.43.317.825.68 1.177 1.082h2.588a.91.91 0 0 1 .912.906.909.909 0 0 1-.912.907h-1.43c.4.908.604 1.889.602 2.88a7.133 7.133 0 0 1-.601 2.883h1.427a.91.91 0 0 1 .914.907.91.91 0 0 1-.914.906h-2.588a7.399 7.399 0 0 1-1.175 1.082.919.919 0 0 1-1.28-.19.904.904 0 0 1 .191-1.268 5.322 5.322 0 0 0 2.2-4.32c0-1.715-.801-3.29-2.2-4.32a.906.906 0 0 1-.191-1.268H9.7a.916.916 0 0 1 .688-.363zm-.778 4.295a1.36 1.36 0 0 1 1.354 1.354v.033a1.36 1.36 0 0 1-1.354 1.32 1.36 1.36 0 0 1-1.353-1.32v-.033a1.36 1.36 0 0 1 1.353-1.354z' />
+            </svg>
+          ),
+        ] as SkillIcon[],
+      },
+      {
+        title: 'DevsClan',
+        href: 'http://devsclan.co.uk/',
+        image: '/devsclan.png',
+        description: 'A company website that provides services for web, mobile & AR/VR developement.',
+        skills: ['typescript', 'astro', 'tailwind'] as SkillIcon[],
+      },
+      {
+        title: 'Astro Blog',
+        href: 'https://muhammad-usama-awan.vercel.app/',
+        image: '/astroblog.png',
+        description: 'Blazing fast blog built with Astro & MDX',
+        skills: ['typescript', 'astro', 'tailwind'] as SkillIcon[],
+      },
+      {
+        title: 'Handy Things',
+        href: 'https://handy-things.vercel.app/',
+        image: '/handythings.png',
+        description: 'A one-stop website containing a collection of useful tools.',
+        skills: ['typescript', 'next', 'tailwind'] as SkillIcon[],
+      },
+      {
+        title: 'Instagram Clone',
+        href: 'https://instagram-clone-reupload.vercel.app/login',
+        image: '/instagramclone.png',
+        description: 'A clone of the Instagram web app.',
+        skills: ['react', 'firebase', 'tailwind'] as SkillIcon[],
       },
     ],
   },
