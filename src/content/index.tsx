@@ -117,7 +117,7 @@ export const content = {
       },
       {
         title: 'ATC Tees',
-        href: 'http://atctess.com/',
+        href: 'http://atctees.com/',
         image: '/atctees.png',
         description: 'An e-commerce platform featuring custom t-shirt designs & team stores marketplace',
         skills: [
@@ -170,7 +170,7 @@ export const content = {
       },
       {
         title: 'Expense Tracker',
-        href: 'http://themaxattire.com/',
+        href: 'https://expense-tracker-eight-livid.vercel.app/',
         image: '/expensetracker.png',
         description: 'A PWA that allows user can create their own categories and templates to track their expenses.',
         skills: [
