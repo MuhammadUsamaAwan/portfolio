@@ -101,7 +101,7 @@ export const content = {
         title: 'MaxAttire',
         href: 'http://themaxattire.com/',
         image: '/maxattire.png',
-        description: 'A comprehensive e-commerce Platform with Custom Decoration Services',
+        description: 'A comprehensive e-commerce platform specializing in custom decoration services.',
         skills: [
           'typescript',
           'next',
@@ -119,7 +119,8 @@ export const content = {
         title: 'ATC Tees',
         href: 'http://atctees.com/',
         image: '/atctees.png',
-        description: 'An e-commerce platform featuring custom t-shirt designs & team stores marketplace',
+        description:
+          'An innovative e-commerce platform offering custom t-shirt designs and a marketplace for team stores.',
         skills: [
           'typescript',
           'next',
@@ -148,7 +149,7 @@ export const content = {
         title: 'ChatDocs',
         href: 'http://github.com/MuhammadUsamaAwan/chat-docs',
         image: '/chatdocs.png',
-        description: 'A LLM Chatbot that answers any questions related to document you upload.',
+        description: 'A LLM chatbot designed to answer questions related to any documents you upload.',
         skills: [
           'typescript',
           'next',
@@ -172,7 +173,8 @@ export const content = {
         title: 'Expense Tracker',
         href: 'https://expense-tracker-eight-livid.vercel.app/',
         image: '/expensetracker.png',
-        description: 'A PWA that allows user can create their own categories and templates to track their expenses.',
+        description:
+          'A PWA where where users can create custom categories and templates to effectively track their expenses.',
         skills: [
           'typescript',
           'next',
@@ -189,28 +191,30 @@ export const content = {
         title: 'DevsClan',
         href: 'http://devsclan.co.uk/',
         image: '/devsclan.png',
-        description: 'A company website that provides services for web, mobile & AR/VR developement.',
+        description: 'A company website offering services for web, mobile, AR, and VR development.',
         skills: ['typescript', 'astro', 'tailwind'] as SkillIcon[],
       },
       {
         title: 'Astro Blog',
         href: 'https://muhammad-usama-awan.vercel.app/',
         image: '/astroblog.png',
-        description: 'Blazing fast blog built with Astro & MDX',
+        description:
+          'A lightning-fast blog powered by Astro and MDX, featuring dynamic tags, RSS feed, search functionality, and pagination.',
         skills: ['typescript', 'astro', 'tailwind'] as SkillIcon[],
       },
       {
         title: 'Handy Things',
         href: 'https://handy-things.vercel.app/',
         image: '/handythings.png',
-        description: 'A one-stop website containing a collection of useful tools.',
+        description: 'A one-stop website containing a collection of useful tools for developers.',
         skills: ['typescript', 'next', 'tailwind'] as SkillIcon[],
       },
       {
         title: 'Instagram Clone',
         href: 'https://instagram-clone-reupload.vercel.app/login',
         image: '/instagramclone.png',
-        description: 'A clone of the Instagram web app.',
+        description:
+          'A clone of the Instagram web application where users can register, follow others, and share images.',
         skills: ['react', 'firebase', 'tailwind'] as SkillIcon[],
       },
     ],
