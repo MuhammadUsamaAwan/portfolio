@@ -3,7 +3,9 @@
 import { motion } from 'framer-motion';
 
 import { SkillIcons } from '~/content/skill-icons';
+import { camelCaseToTitleCase } from '~/lib/utils';
 import { Marquee } from '~/components/ui/marquee';
+import { Tooltip, TooltipContent, TooltipPortal, TooltipTrigger } from '~/components/ui/tooltip';
 
 export function Skills() {
   const SLIDE_VARIANTS = {
@@ -20,9 +22,16 @@ export function Skills() {
       transition={{ duration: 1 }}
       id='skills'
     >
-      <Marquee pauseOnHover className='gap-8 [--duration:20s]'>
+      <Marquee>
         {Object.entries(SkillIcons).map(([name, Icon]) => (
-          <Icon key={name} className='size-20 px-5' />
+          <Tooltip key={name}>
+            <TooltipTrigger>
+              <Icon className='size-10' />
+            </TooltipTrigger>
+            <TooltipPortal>
+              <TooltipContent>{camelCaseToTitleCase(name)}</TooltipContent>
+            </TooltipPortal>
+          </Tooltip>
         ))}
       </Marquee>
     </motion.section>

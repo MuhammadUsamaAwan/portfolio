@@ -3,6 +3,7 @@ import { GeistSans } from 'geist/font/sans';
 
 import { content } from '~/content';
 import { cn } from '~/lib/utils';
+import { TooltipProvider } from '~/components/ui/tooltip';
 import { Background } from '~/components/layouts/background';
 import { SiteFooter } from '~/components/layouts/site-footer';
 import { SiteHeader } from '~/components/layouts/site-header';
@@ -26,7 +27,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={cn('flex min-h-dvh flex-col font-sans antialiased', GeistSans.variable)}>
         <SiteHeader />
-        <main className='flex-1'>{children}</main>
+        <TooltipProvider delayDuration={500}>
+          <main className='flex-1'>{children}</main>
+        </TooltipProvider>
         <SiteFooter />
         <Background />
       </body>

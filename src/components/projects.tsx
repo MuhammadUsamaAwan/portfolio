@@ -7,7 +7,9 @@ import { ExternalLinkIcon } from 'lucide-react';
 
 import { content } from '~/content';
 import { SkillIcons } from '~/content/skill-icons';
+import { camelCaseToTitleCase } from '~/lib/utils';
 import { CardBody, CardContainer, CardItem } from '~/components/ui/card';
+import { Tooltip, TooltipContent, TooltipPortal, TooltipTrigger } from '~/components/ui/tooltip';
 
 export function Projects() {
   const SLIDE_VARIANTS = {
@@ -52,10 +54,18 @@ export function Projects() {
                   <div className='flex -space-x-1.5'>
                     {p.skills?.map((T, i) => {
                       const Icon = typeof T === 'string' ? SkillIcons[T] : T;
+                      const name = typeof T === 'string' ? T : T.name;
                       return (
-                        <div key={i} className='grid place-content-center rounded-full border bg-background p-2'>
-                          <Icon className='size-5' key={i} />
-                        </div>
+                        <Tooltip key={name}>
+                          <TooltipTrigger>
+                            <div className='grid place-content-center rounded-full border bg-background p-2'>
+                              <Icon className='size-5' key={i} />
+                            </div>
+                          </TooltipTrigger>
+                          <TooltipPortal>
+                            <TooltipContent>{camelCaseToTitleCase(name)}</TooltipContent>
+                          </TooltipPortal>
+                        </Tooltip>
                       );
                     })}
                   </div>
