@@ -6,8 +6,7 @@ import { motion } from 'framer-motion';
 import { ExternalLinkIcon } from 'lucide-react';
 
 import { content } from '~/content';
-import { SkillIcons } from '~/content/skill-icons';
-import { camelCaseToTitleCase } from '~/lib/utils';
+import { Icons } from '~/content/icons';
 import { CardBody, CardContainer, CardItem } from '~/components/ui/card';
 import { Tooltip, TooltipContent, TooltipPortal, TooltipTrigger } from '~/components/ui/tooltip';
 
@@ -52,18 +51,17 @@ export function Projects() {
                 </CardItem>
                 <div className='mt-4 flex items-center justify-between'>
                   <div className='flex -space-x-1.5'>
-                    {p.skills?.map((T, i) => {
-                      const Icon = typeof T === 'string' ? SkillIcons[T] : T;
-                      const name = typeof T === 'string' ? T : T.name;
+                    {p.skills?.map(s => {
+                      const Icon = Icons[s.icon];
                       return (
-                        <Tooltip key={name}>
+                        <Tooltip key={s.name}>
                           <TooltipTrigger>
                             <div className='grid place-content-center rounded-full border bg-background p-2'>
-                              <Icon className='size-5' key={i} />
+                              <Icon className='size-5' />
                             </div>
                           </TooltipTrigger>
                           <TooltipPortal>
-                            <TooltipContent>{camelCaseToTitleCase(name)}</TooltipContent>
+                            <TooltipContent>{s.name}</TooltipContent>
                           </TooltipPortal>
                         </Tooltip>
                       );

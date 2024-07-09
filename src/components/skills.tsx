@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion';
 
-import { SkillIcons } from '~/content/skill-icons';
-import { camelCaseToTitleCase } from '~/lib/utils';
+import { content } from '~/content';
+import { Icons } from '~/content/icons';
 import { Marquee } from '~/components/ui/marquee';
 import { Tooltip, TooltipContent, TooltipPortal, TooltipTrigger } from '~/components/ui/tooltip';
 
@@ -23,16 +23,19 @@ export function Skills() {
       id='skills'
     >
       <Marquee>
-        {Object.entries(SkillIcons).map(([name, Icon]) => (
-          <Tooltip key={name}>
-            <TooltipTrigger>
-              <Icon className='size-10' />
-            </TooltipTrigger>
-            <TooltipPortal>
-              <TooltipContent>{camelCaseToTitleCase(name)}</TooltipContent>
-            </TooltipPortal>
-          </Tooltip>
-        ))}
+        {content.skills.map(s => {
+          const Icon = Icons[s.icon];
+          return (
+            <Tooltip key={s.name}>
+              <TooltipTrigger>
+                <Icon className='size-10' />
+              </TooltipTrigger>
+              <TooltipPortal>
+                <TooltipContent>{s.name}</TooltipContent>
+              </TooltipPortal>
+            </Tooltip>
+          );
+        })}
       </Marquee>
     </motion.section>
   );
