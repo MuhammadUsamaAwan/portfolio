@@ -86,12 +86,20 @@ export const content = {
       icon: 'express' satisfies Icon as Icon,
     },
     {
+      name: 'Fastify',
+      icon: 'fastify' satisfies Icon as Icon,
+    },
+    {
       name: 'Nest',
       icon: 'nest' satisfies Icon as Icon,
     },
     {
       name: 'Postgres',
       icon: 'postgres' satisfies Icon as Icon,
+    },
+    {
+      name: 'MySQL',
+      icon: 'mySQL' satisfies Icon as Icon,
     },
     {
       name: 'MongoDB',
@@ -307,26 +315,6 @@ export const content = {
         ],
       },
       {
-        title: 'Handy Things',
-        href: 'https://handy-things.vercel.app/',
-        image: '/handythings.png',
-        description: 'A one-stop website containing a collection of useful tools for developers.',
-        skills: [
-          {
-            name: 'Typescript',
-            icon: 'typescript' satisfies Icon as Icon,
-          },
-          {
-            name: 'Next',
-            icon: 'next' satisfies Icon as Icon,
-          },
-          {
-            name: 'TailwindCSS',
-            icon: 'tailwind' satisfies Icon as Icon,
-          },
-        ],
-      },
-      {
         title: 'Instagram Clone',
         href: 'https://instagram-clone-reupload.vercel.app/login',
         image: '/instagramclone.png',
@@ -350,6 +338,53 @@ export const content = {
             icon: 'tailwind' satisfies Icon as Icon,
           },
         ],
+      },
+      {
+        title: 'Handy Things',
+        href: 'https://handy-things.vercel.app/',
+        image: '/handythings.png',
+        description: 'A one-stop website containing a collection of useful tools for developers.',
+        skills: [
+          {
+            name: 'Typescript',
+            icon: 'typescript' satisfies Icon as Icon,
+          },
+          {
+            name: 'Next',
+            icon: 'next' satisfies Icon as Icon,
+          },
+          {
+            name: 'TailwindCSS',
+            icon: 'tailwind' satisfies Icon as Icon,
+          },
+        ],
+      },
+    ],
+  },
+  certifications: {
+    heading: (
+      <>
+        Certifications That Set <span className='text-primary'>Me Apart</span>
+      </>
+    ),
+    certifications: [
+      {
+        name: '15 Days of SQL: The Complete SQL Masterclass',
+        instructor: 'Nikolai Schuler',
+        issuer: 'Udemy',
+        image: '/sql.jpg',
+      },
+      {
+        name: 'NestJS Microservices: Build & Deploy a Scalable Backend',
+        instructor: 'Michael Guay',
+        issuer: 'Udemy',
+        image: '/nest.jpg',
+      },
+      {
+        name: 'Fast API - The Complete Course (Beginner + Advanced)',
+        instructor: 'Eric Roby, Chad Darby',
+        issuer: 'Udemy',
+        image: '/fastapi.jpg',
       },
     ],
   },

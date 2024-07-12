@@ -26,9 +26,9 @@ export function Projects() {
         transition={{ duration: 1 }}
         id='projects'
       >
-        <motion.h1 className='mx-auto mb-8 max-w-4xl text-balance text-center text-4xl font-extrabold leading-[3rem] tracking-tighter'>
+        <h1 className='mx-auto mb-8 max-w-4xl text-balance text-center text-4xl font-extrabold leading-[3rem] tracking-tighter'>
           {content.projects.heading}
-        </motion.h1>
+        </h1>
         <div className='grid gap-10 md:grid-cols-2 xl:grid-cols-3'>
           {content.projects.projects.map(p => (
             <CardContainer key={p.title}>
