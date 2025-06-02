@@ -136,7 +136,15 @@ export const content = {
   ],
   experience: [
     {
-      duration: 'May 2023 - Present',
+      duration: 'Dec 2024 - Present',
+      company: 'DHA Head Office',
+      location: 'Islamabad',
+      position: 'Fullstack Developer',
+      description:
+        'Designed and developed an advanced Attendance Management System leveraging React.js, Nest.js, Hono, Bun, Go, and PostgreSQL. Integrated ZKTeco machines, mobile applications, and geolocation tracking for seamless attendance monitoring.Contributed to the development of an HR Management System (HRMS) using .NET Core and SQL Server, utilizing Crystal Reports and DevExpress for robust reporting',
+    },
+    {
+      duration: 'May 2023 - July 2024',
       company: 'Embrace IT',
       location: 'Islamabad',
       position: 'Fullstack Developer',
